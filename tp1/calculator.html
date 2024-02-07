@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>calulator</title>
+	
+</head>
+<body>
+  <script>
+do {
+        alert("Arithmetic Calculation Operations\n"
+             + "1. Addition (+)\n"
+             + "2. Subtraction (-)\n"
+             + "3. Multiplication (*)\n"
+             + "4. Division (/)\n"
+             + "5. Reset\n"
+             + "6. Submit\n"
+             + "7. Exit\n")
+            
+        choice = Number(prompt("Enter your choice (1-7): "))
+// choosing the operation by numbers
+        if (choice == '1', '2', '3', '4'){
+            num_a = Number(prompt("\nEnter a number A: "))
+            num_b = Number(prompt("Enter a number B: "))
+        }
+            if (choice == '1'){
+                result = num_a + num_b
+                operation = 'Addition'
+                alert(`\nThe result of ${operation} is: ${result}\n`)
+                }
+              else if (choice == '2'){
+                result = num_a - num_b
+                operation = 'Subtraction'
+                alert(`\nThe result of ${operation} is: ${result}\n`)
+            }
+              else if (choice == '3'){
+                result = num_a * num_b
+                operation = 'Multiplication'
+                alert(`\nThe result of ${operation} is: ${result}\n`)
+                }
+              else if (choice == '4'){
+                if (num_b != 0){
+                    result = num_a / num_b
+                    operation = 'Division'
+                    alert(`\nThe result of ${operation} is: ${result}\n`)
+
+                }
+            
+                else{
+                    prompt("Error: Division by zero")
+                  
+                }
+            }
+              else if (choice == '5'){
+            alert("Calculator reset.")
+              }
+              else if (choice == '6'){
+            alert("Calculator submitted.")
+            
+              }
+        else{
+            alert("Invalid choice. Please enter a number between 1 and 7.")
+            
+        }
+        if (choice == '7'){
+            alert("Exiting the calc. Goodbye!")
+        }
+      }
+    
+    while (true)
+  </script>
+
+</body>
+</html>

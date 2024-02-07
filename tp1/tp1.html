@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+      
+const today = new Date();
+
+//  Calculate the perimeter and area of a square:
+const sideLength = prompt(' Enter the side length of the square: ');
+const perimeter = 4 * sideLength;
+const area = sideLength ** 2;
+alert(`   Perimeter: ${perimeter}, Area: ${area}`);
+
+//  Convert Euros to Dirhams:
+const euros = prompt('  Enter the amount in Euros: ');
+const exchangeRate = 10.5;  
+const dirhams = euros * exchangeRate;
+alert(`   ${euros} Euros is equal to ${dirhams} Dirhams.`);
+
+//  Calculate duration in seconds:
+const hours = Number(prompt(' Enter hours:'));
+const minutes = Number(prompt('    Enter minutes:'));
+const seconds = Number(prompt('    Enter seconds:'));
+
+const totalSeconds = hours * 3600 + minutes * 60 + seconds;
+alert(`   The duration is ${totalSeconds} seconds.`);
+
+
+// Calcul des heures, minutes et secondes
+
+secondes = Number(prompt("Veuillez saisir le nombre de secondes : "))
+heures = secondes / 3600;
+minute = secondes % 3600 / 60;
+secondes_restantes = secondes % 60;
+
+alert(`${secondes} secondes equals ${heures} hours, ${minute} minutes and ${secondes_restantes} secondes.`);
+
+// Demande à l'utilisateur de saisir le numéro d'un mois
+mois = Number(prompt("Veuillez saisir le numéro d'un mois (entre 1 et 12) : "));
+
+// Vérification de la validite de mois
+if (1 <= mois <= 12){
+
+    jours_par_mois = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+    // Affichage du résultat    //drt arrays b7al loop 
+    alert(`Le mois ${mois} a ${jours_par_mois[mois - 1]} jours.`)
+}
+else{
+    alert("Numéro de mois invalide.")
+}
+// Script pour évaluer la moyenne d'un candidat
+
+// Demande à l'utilisateur de saisir la moyenne du candidat
+moyenne = float(prompt("Veuillez saisir la moyenne du candidat : "))
+
+// Evaluation de la moyenne
+if (moyenne < 10){
+    result = "recalé"
+}
+else if (10 <= moyenne < 12){
+    result = "reçu"
+}
+else{
+    result = "reçu avec mention"
+}
+// Affichage du résultat
+alert(`Le candidat est ${result}.`)
+
+// Script pour recommander un film en fonction de l'âge
+
+// Demande à l'utilisateur de saisir son âge
+age = Number(prompt("Veuillez saisir votre âge : "))
+
+// Recommandation de film en fonction de l'âge
+if (age <= 13){
+    recommandation = "Lilo & Stitch"
+}
+else if (13 < age < 18)
+    recommandation = "Matrix"
+else{
+    recommandation = "Evil Dead"
+}
+// Affichage du résultat
+alert(`En fonction de votre âge, nous vous recommandons le film : ${recommandation}.`)
+
+// Script pour connaître le signe du produit de deux nombres
+
+// Deux nombres à multiplier
+nombre1 = -64
+nombre2 = -455
+
+// Vérification du signe du produit
+if (nombre1 < 0 && nombre2 < 0 || nombre1 > 0 && nombre2 > 0){
+    signe = "positif"
+}
+else{
+    signe = "négatif"
+}
+// Affichage du résultat
+alert (`Le produit de ${nombre1} et ${nombre2} est : ${signe}.`)
+
+    </script>
+    
+</body>
+</html>
+        
